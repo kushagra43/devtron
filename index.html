@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <img src="Devtron logo.png" alt="devtron_logo" />
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header_flex_container">
+                <div class="header_text_container">
+                    <h1 class="header_heading">Set up CI/CD Pipelines for Kubernetes in 3 minutes!</h1>
+                    <p class="header_parah">Streamline your Kubernetes deployments using Devtron and say goodbye  to
+                        writing YAML scripts.
+                    </p>
+                </div>
+                <div class="header_form_container">
+                    <form class="">
+                        <h3 class="header_form_heading">Request a Demo For Your Custom Setup</h3>
+                        <div class="header_form_input_div">
+                            <label for="email_address" class="header_form_label">Work Email Address</label>
+                            <input placeholder="your@company.com" name="email_address" class="header_form_input" />
+                        </div>
+                        <div class="header_form_input_div">
+                            <label for="email_address" class="header_form_label">First Name</label>
+                            <input placeholder="e.g. John" name="company" class="header_form_input" />
+                        </div>
+                        <div class="header_form_input_div">
+                            <select id="changes" name="changes" class="header_form_input" style="width: 100%;">
+                                <option value="Developer Experience and Enablement">Developer Experience and Enablement
+                                </option>
+                                <option value="Faster Debugging and MTTR">Faster Debugging and MTTR</option>
+                                <option value="Visibility across clusters on a single pane">Visibility across clusters
+                                    on a single pane</option>
+                                <option value="Production stability issues across Kubernetes lifecycle">Production
+                                    stability issues across Kubernetes lifecycle</option>
+                                <option value="Custom Requirements">Custom Requirements</option>
+                            </select>
+                        </div>
+                        <div class="flex-end">
+                            <button class="button">FREE DEMO</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Companies Section -->
+    <section class="flex_center Companies_section">
+        <div class="container">
+            <h2 class="heading2 text_center">❤️ By Developers & Business’</h2>
+            <div class="marque-container">
+                <div class="marque-grid-container">
+                    <div class="grid-8">
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 2.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 3.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 4.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 5.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 6.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 7.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 8.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 9.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="grid-8" id="marque_second_image_container">
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 2.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 3.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 4.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 5.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 6.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 7.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 8.png" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="image 9.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pipeline Section -->
+    <section class="flex_center Companies_section">
+        <div class="container">
+            <h2 class="heading2 text_center">
+                Finding it difficult to manage</br>
+                CI/CD pipeline on Kubernetes?
+            </h2>
+            <div class="devtron-landscape">
+                <div class="tabs">
+                    <div id="policy-tab" class="tabs__activebar" style="height: 60px; transform: translateY(0px)">
+                    </div>
+                    <div class="tabs__item active"
+                        onclick="handleTabChange(event, 'tab-0');landscapeTabGAEvent('Compliance')"
+                        id="defaultSelectedTab">
+                        Compliance
+                    </div>
+                    <div class="tabs__item"
+                        onclick="handleTabChange(event, 'tab-1');landscapeTabGAEvent('Policy Management')">
+                        Policy
+                        Management</div>
+                    <div class="tabs__item"
+                        onclick="handleTabChange(event, 'tab-2');landscapeTabGAEvent('Deploy Time')">
+                        Deploy
+                        Time App
+                        Debuggability
+                    </div>
+                    <div class="tabs__item"
+                        onclick="handleTabChange(event, 'tab-3');landscapeTabGAEvent('Environment Management')">
+                        Environment Management</div>
+                    <div class="tabs__item"
+                        onclick="handleTabChange(event, 'tab-4');landscapeTabGAEvent('GitOps Platform')">
+                        GitOps
+                        Platform</div>
+                    <div class="tabs__item"
+                        onclick="handleTabChange(event, 'tab-5');landscapeTabGAEvent('Software Delivery')">
+                        Software
+                        Delivery Workflow
+                    </div>
+                    <div class="tabs__item"
+                        onclick="handleTabChange(event, 'tab-6');landscapeTabGAEvent('Operation Insights')">
+                        Operation Insights</div>
+                    <div class="tabs__item" onclick="handleTabChange(event, 'tab-7');landscapeTabGAEvent('Cost')">
+                        Cost Management</div>
+                </div>
+
+                <div style="width: 70vw">
+                    <div id="tab-0" class="tabcontent" style="display: block;">
+                        <div style="display: flex; flex-wrap: wrap">
+                            <div class="landscape-card-width">
+                                <div data-scroll="in" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Fine grained access control; control who can edit configuration and who can
+                                        deploy.
+                                    </div>
+                                </div>
+                                <div data-scroll="in" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        History of all CI and CD events
+                                    </div>
+                                </div>
+                                <div data-scroll="in" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Relevant cloud events and their impact on applications
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landscape-card-width">
+                                <div data-scroll="in" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Audit log to know who did what and when
+                                    </div>
+                                </div>
+                                <div data-scroll="in" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Kubernetes events impacting application
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-1" class="tabcontent" style="display: none;">
+                        <div style="display: flex; flex-wrap: wrap">
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Multi level security policy at global, cluster, environment and application
+                                        for efficient hierarchical policy management
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Define policies and exception for kubernetes resources
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Advanced workflow policies like blackout window, branch environment
+                                        relationship to secure build and deployment pipelines
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Behavior driven security policy
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Define policies for events for faster resolution
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-2" class="tabcontent" style="display: none;">
+                        <div style="display: flex; flex-wrap: wrap">
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        One place for all historical kubernetes events
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Auto identify new and old pods
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Advanced logging functionality with grep and json search
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Auto issue identification
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Access all manifests securely for eg secret obfuscation
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Application metrics for cpu, ram, http status code and latency with
+                                        comparison between new and old
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Intelligent correlation between events, logs for faster triangulation of
+                                        issue
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-3" class="tabcontent" style="display: none;">
+                        <div style="display: flex; flex-wrap: wrap">
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Define blackout windows to avoid deployment during high critical periods
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Compare environments and all artifacts deployed on environments
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Lock environment so that others cannot make any changes without your
+                                        consent, for eg during testing
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Hibernate unused application to save resources
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Reconcile and compare configuration of applications across environment
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Easily manage and share helm charts within and across teams
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Environment override to selectively override configuration for environment
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-4" class="tabcontent" style="display: none;">
+                        <div style="display: flex; flex-wrap: wrap">
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25"
+                                    style="min-width: 155px">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Gitops exposed through API and UI so that you dont have to interact with git
+                                        cli
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25"
+                                    style="min-width: 155px">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Enforce finer access control than git
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25"
+                                    style="min-width: 155px">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Gitops backed by postgres for easier analysis
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-5" class="tabcontent" style="display: none;">
+                        <div style="display: flex; flex-wrap: wrap">
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Workflow which understands the domain of kubernetes and testing so that you
+                                        dont have to write scripts to handle it
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Reusable and composable components so that workflows are easy to contruct
+                                        and reason through
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-6" class="tabcontent" style="display: none;">
+                        <div style="display: flex; flex-wrap: wrap">
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Deployment metrics to measure success of agile process. It captures mttr,
+                                        change failure rate, deployment frequency, deployment size out of the box.
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Monitor changes across deployments and revert easily
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Audit log to understand the failure causes
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-7" class="tabcontent" style="display: none;">
+                        <div style="display: flex; flex-wrap: wrap">
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Automatic resource optimization even with HPA
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Advanced pod placement strategies for instance and spot selection
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landscape-card-width">
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Unused resource management to rightsize cluster
+                                    </div>
+                                </div>
+                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                    <div class="card-body">
+                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                        <br>
+                                        Complete visibility into cost of the cluster, environment and applications
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- logo section -->
+            <div class="flex_center">
+                <button class="button">FREE DEMO</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="flex_center">
+        <div class="container">
+            <div class="features_grid">
+                <div class="flex_center features_grid_div ">
+                    <img src="./image 33.png" alt="">
+                    <p class="features_text">Productionize</br>K8s Quickly</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="./image 34.png" alt="">
+                    <p class="features_text">Single Interface Build,</br>Deploy, Debug</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="./image 35.png" alt="">
+                    <p class="features_text">DevOps</br>Efficiency</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="./image 36.png" alt="">
+                    <p class="features_text">Optimize</br>Cost</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="./image 37.png" alt="">
+                    <p class="features_text">Add features as</br>you Go</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="./image 38.png" alt="">
+                    <p class="features_text">Migrate apps to</br>K8s easily</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="./image 39.png" alt="">
+                    <p class="features_text">Application Health</br>Alerts</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="./image 40.png" alt="">
+                    <p class="features_text">Quick Response</br>Time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section>
+        <div>
+            <h2></h2>
+        </div>
+        <!-- Slider -->
+        <button>FREE DEMO</button>
+    </section>
+
+    <!-- Download section -->
+    <section class="download_section flex_center">
+        <div class="container">
+            <div class="download_section_flex">
+                <div>
+                    <img class="download_section_image" src="Download_section_image.png" alt="">
+                </div>
+                <div class="download_section_text_container">
+                    <h2 class="heading2">The Kubernetes Native Application Management Platform</h2>
+                    <button class="button">Download</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer_flex_container">
+                <div class="footer_text_container">
+                    <h2 class="heading2">
+                        Reduce your CI/CD burden on k8s.
+                        </br>
+                        </br>
+                        Get started with Devtron today.</h2>
+                    <button class="button">FREE DEMO</button>
+                </div>
+                <div>
+                    <img src="./Footer_Image.png" alt="footer_image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function handleTabChange(event, tabIdToDisplay) {
+            let tabcontent, tablinks;
+            // to change the position of active bar line
+            let activeBarNumber = Number(tabIdToDisplay.split('-')[1]) * 60;
+            document.getElementsByClassName('tabs__activebar')[0].style.transform = `translateY(${activeBarNumber}px)`;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+
+            for (let i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = 'none';
+            }
+
+            tablinks = document.getElementsByClassName("tabs__item");
+
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabIdToDisplay).style.display = "block";
+
+            event.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>
