@@ -717,6 +717,11 @@ button:not(:disabled) {
     .download_section_flex {
         flex-direction: column-reverse;
     }
+
+    /* extra classes */
+    .heading2 {
+        font-size: 34px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -758,6 +763,15 @@ button:not(:disabled) {
         grid-template-columns: 1fr 1fr;
     }
 
+    /* Download section */
+    .download_section_text_container {
+        width: 100%;
+    }
+
+    .download_section_image {
+        width: 100%;
+    }
+
     /* footer */
     .footer_text_container {
         width: 100%;
@@ -770,7 +784,7 @@ button:not(:disabled) {
 
     /* extra classes */
     .heading2 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .button {
