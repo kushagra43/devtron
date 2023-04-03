@@ -10,6 +10,7 @@ body {
     background-color: #000B28;
 }
 
+/* navbar  */
 .navbar {
     display: flex;
     align-items: center;
@@ -20,6 +21,7 @@ body {
     position: sticky;
 }
 
+/* header */
 .header {
     background-image: url(./Top_Mesh.png);
     background-repeat: no-repeat;
@@ -314,7 +316,7 @@ body {
 .download_section {
     background: linear-gradient(90deg, #4E2DBF 0%, #CEBFFF 29.98%, #5C36DC 63.95%);
     margin-top: 140px;
-
+    padding: 0 40px;
 }
 
 
@@ -399,4 +401,216 @@ body {
 
 .text_center {
     text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .header_text_container {
+        width: 55%;
+        margin-right: 20px;
+    }
+
+    .footer_text_container {
+        width: 45%;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    /* header */
+    .nav_devtron_logo {
+        height: 28px;
+    }
+
+    .header {
+        padding: 60px 20px;
+    }
+
+    .header_heading {
+        font-size: 54px;
+    }
+
+    .header_parah {
+        font-size: 16px;
+    }
+
+    .header_form_container {
+        border-radius: 14px;
+        padding: 28px 40x;
+        margin-left: 20px;
+    }
+
+    .header_form_heading {
+        font-size: 20px;
+        max-width: 220px;
+    }
+
+    .header_form_input_div {
+        margin-top: 18px;
+    }
+
+    .header_form_label {
+        font-size: 13.5403px;
+    }
+
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 12px;
+        /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        font-size: 12px;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        font-size: 12px;
+    }
+
+    .header_form_input {
+        font-size: 12px;
+    }
+
+
+
+
+    /* Pipeline Section */
+    .landscape-card-width {
+        width: 100%;
+    }
+
+    .envision-logo {
+        padding-bottom: 4px;
+    }
+
+    /* footer */
+
+
+    .footer_image {
+        width: 45%;
+        height: auto;
+    }
+
+
+    /* extra classes */
+    .heading2 {
+        font-size: 36px;
+    }
+
+    .button {
+        border-radius: 40px;
+        padding: 14px 24px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 34px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header_flex_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_form_container {
+        margin-left: 0px;
+    }
+
+    .header_text_container {
+        margin-right: 0px;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .header_heading {
+        text-align: center;
+    }
+
+    .header_parah {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header_form_container {
+        width: 80%;
+    }
+
+    /* footer */
+    .footer_flex_container {
+        align-items: center;
+    }
+
+    .footer_text_container {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .footer_flex_container {
+        flex-direction: column;
+    }
+
+    .footer_image {
+        margin-top: 40px;
+        width: 80%;
+    }
+
+    .footer_heading {
+        text-align: center;
+    }
+
+    .footer_button_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* navbar */
+    .nav_devtron_logo {
+        height: 24px;
+    }
+
+    /* header */
+    .header_text_container {
+        width: 100%;
+    }
+
+    .header_heading {
+        font-size: 48px;
+    }
+
+    .header_parah {
+        font-size: 14px;
+    }
+
+    .header_form_container {
+        width: 80%;
+    }
+
+    /* footer */
+    .footer_text_container {
+        width: 100%;
+    }
+
+    .footer_image {
+        width: 100%;
+    }
+
+
+    /* extra classes */
+    .heading2 {
+        font-size: 32px;
+    }
+
+    .button {
+        border-radius: 36px;
+        padding: 12px 20px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 30px;
+    }
 }
