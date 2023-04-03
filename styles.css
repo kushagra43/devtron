@@ -170,8 +170,8 @@ body {
     display: grid;
     column-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 3rem 15px;
-    width: 100%;
+    margin: 2rem 15px;
+    width: 140%;
     animation: marquee 10s linear infinite;
     overflow: hidden;
 }
@@ -312,6 +312,98 @@ body {
     padding: 0 0 16px;
 }
 
+
+.accordion .card-body {
+    background: #281566;
+    margin: 16px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px
+}
+
+.accordion .envision-logo {
+    width: 32px;
+    position: relative;
+    left: -6px
+}
+
+.btn:hover {
+    outline: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #f2c94c;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}
+
+.btn-link,
+.btn-link:hover {
+    color: rgba(255, 255, 255, .8);
+}
+
+.accordion .btn,
+.read_arrow {
+    position: relative;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 20px 0 15px;
+    font-size: 16px;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
 /* Download section */
 .download_section {
     background: linear-gradient(90deg, #4E2DBF 0%, #CEBFFF 29.98%, #5C36DC 63.95%);
@@ -413,6 +505,21 @@ body {
         width: 45%;
         margin-right: 20px;
     }
+
+    /* Download section */
+    .download_section_image {
+        margin-right: 20px;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .download_section_text_container {
+        margin-left: 20px;
+    }
+
+    .download_section_flex {
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -473,8 +580,15 @@ body {
         font-size: 12px;
     }
 
+    /* Companies Section */
+    .grid-8 {
+        width: 180%;
+    }
 
 
+    .marque-grid-container {
+        width: 360%;
+    }
 
     /* Pipeline Section */
     .landscape-card-width {
@@ -486,13 +600,10 @@ body {
     }
 
     /* footer */
-
-
     .footer_image {
         width: 45%;
         height: auto;
     }
-
 
     /* extra classes */
     .heading2 {
@@ -537,6 +648,26 @@ body {
         width: 80%;
     }
 
+    /* Companies Section */
+    .grid-8 {
+        width: 200%;
+    }
+
+
+    .marque-grid-container {
+        width: 400%;
+    }
+
+    /* features grid */
+    .features_grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Pipeline Section */
+    .devtron-landscape {
+        display: none;
+    }
+
     /* footer */
     .footer_flex_container {
         align-items: center;
@@ -565,6 +696,27 @@ body {
         align-items: center;
         justify-content: center;
     }
+
+    /* Download section */
+    .download_section_image {
+        width: 80%;
+        margin-top: 40px;
+        margin-right: 0;
+    }
+
+    .download_section_text_container {
+        width: 80%;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    .download_section_heading {
+        text-align: center;
+    }
+
+    .download_section_flex {
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -589,6 +741,21 @@ body {
 
     .header_form_container {
         width: 80%;
+    }
+
+    /* Companies Section */
+    .grid-8 {
+        width: 240%;
+    }
+
+
+    .marque-grid-container {
+        width: 480%;
+    }
+
+    /* features grid */
+    .features_grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     /* footer */
