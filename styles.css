@@ -26,7 +26,7 @@ body {
     background-image: url(./Top_Mesh.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 40px;
+    padding: 90px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,7 +203,7 @@ body {
 }
 
 .brands_img {
-    width: 100%;
+    width: 140%;
     height: auto;
 }
 
