@@ -858,7 +858,7 @@
         <div class="container">
             <div class="testimonial_heading_div">
                 <h2 class="heading2">Engineering Teams That Love Us</h2>
-                <div>
+                <div class="testimonial_button_container">
                     <button class="testimonial_button prev"><img src="Arrow.png" /></button>
                     <button class="testimonial_button next"><img src="Arrow 2.png" /></button>
                 </div>
@@ -1021,7 +1021,14 @@
         const prev = document.querySelector('.prev');
         const next = document.querySelector('.next');
         let counter = 0;
-        const size = document.querySelector('.slides').clientWidth / 5;
+        var size = document.querySelector('.slides').clientWidth / 5;;
+        const getsize = () => {
+            size = document.querySelector('.slides').clientWidth / 5;
+            console.log(size);
+            setTimeout(getsize, 50);
+        }
+
+        setTimeout(getsize, 50);
 
         slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
