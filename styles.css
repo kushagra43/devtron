@@ -213,7 +213,7 @@ body {
     position: relative;
     border-radius: 0 50px 0 0;
     color: #fff;
-    min-height: 800px
+    min-height: 600px
 }
 
 .devtron-landscape {
@@ -873,12 +873,12 @@ body {
 
     /* Companies Section */
     .grid-8 {
-        width: 240%;
+        width: 300%;
+        margin: 1rem 15px;
     }
 
-
     .marque-grid-container {
-        width: 480%;
+        width: 600%;
     }
 
     /* features grid */

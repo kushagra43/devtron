@@ -17,7 +17,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="first-fold">
         <div class="container">
             <div class="header_flex_container">
                 <div class="header_text_container">
@@ -29,29 +29,15 @@
                 <div class="header_form_container">
                     <form class="">
                         <h3 class="header_form_heading">Request a Demo For Your Custom Setup</h3>
-                        <div class="header_form_input_div">
-                            <label for="email_address" class="header_form_label">Work Email Address</label>
-                            <input placeholder="your@company.com" name="email_address" class="header_form_input" />
-                        </div>
-                        <div class="header_form_input_div">
-                            <label for="email_address" class="header_form_label">First Name</label>
-                            <input placeholder="e.g. John" name="company" class="header_form_input" />
-                        </div>
-                        <div class="header_form_input_div">
-                            <select id="changes" name="changes" class="header_form_input" style="width: 100%;">
-                                <option value="Developer Experience and Enablement">Developer Experience and Enablement
-                                </option>
-                                <option value="Faster Debugging and MTTR">Faster Debugging and MTTR</option>
-                                <option value="Visibility across clusters on a single pane">Visibility across clusters
-                                    on a single pane</option>
-                                <option value="Production stability issues across Kubernetes lifecycle">Production
-                                    stability issues across Kubernetes lifecycle</option>
-                                <option value="Custom Requirements">Custom Requirements</option>
-                            </select>
-                        </div>
-                        <div class="flex-end">
-                            <button class="button">FREE DEMO</button>
-                        </div>
+                        <script charset="utf-8" type="text/javascript"
+                            src="//js.hsforms.net/forms/embed/v2.js"></script>
+                        <script>
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "6866519",
+                                formId: "6cb86d0f-1d72-49a4-805d-3ec2029a674f"
+                            });
+                        </script>
                     </form>
                 </div>
             </div>
@@ -808,7 +794,7 @@
                 </div>
                 <!-- logo section -->
                 <div class="flex_center">
-                    <button class="button">FREE DEMO</button>
+                    <button class="button" onclick="scrollToSection()">FREE DEMO</button>
                 </div>
             </div>
     </section>
@@ -935,7 +921,7 @@
                 </div>
             </div>
             <div class="flex_center">
-                <button class="button">FREE DEMO</button>
+                <button class="button" onclick="scrollToSection()">FREE DEMO</button>
             </div>
         </div>
     </section>
@@ -968,7 +954,7 @@
                         </br>
                         Get started with Devtron today.</h2>
                     <div class="footer_button_container">
-                        <button class="button footer_button">FREE DEMO</button>
+                        <button class="button footer_button" onclick="scrollToSection()">FREE DEMO</button>
                     </div>
                 </div>
                 <img src="./Footer_Image.png" alt="footer_image" class="footer_image">
@@ -1059,7 +1045,14 @@
                 slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
             }
         });
+
+        // scroll to top
+        function scrollToSection() {
+            document.querySelector('#first-fold').scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
+
+
 </body>
 
 </html>
