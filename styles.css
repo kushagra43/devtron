@@ -763,6 +763,16 @@ body {
         object-fit: cover;
     }
 
+    .testimonial_heading_div{
+        flex-direction: column;
+    }
+
+    .testimonial_button_container{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .slide_text_container{
         margin-right: 10%;
         margin-left: 0;
@@ -829,10 +839,6 @@ body {
 
     .download_section_flex {
         flex-direction: column-reverse;
-    }
-
-    .testimonial_button_container{
-        display: none;
     }
 
     /* extra classes */
