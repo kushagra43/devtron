@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="_transitions.scss">
 </head>
 
 <body>
@@ -131,684 +132,685 @@
                 <div class="tabs">
                     <div id="policy-tab" class="tabs__activebar" style="height: 60px; transform: translateY(0px)">
                     </div>
-                    <div class="tabs__item active"
-                        onclick="handleTabChange(event, 'tab-0');landscapeTabGAEvent('Compliance')"
-                        id="defaultSelectedTab">
+                    <div class="tabs__item active" onclick="handleTabChange(event, 'tab-0')" id="defaultSelectedTab">
                         Compliance
                     </div>
-                    <div class="tabs__item"
-                        onclick="handleTabChange(event, 'tab-1');landscapeTabGAEvent('Policy Management')">
+                    <div class="tabs__item" onclick="handleTabChange(event, 'tab-1')">
                         Policy
                         Management</div>
-                    <div class="tabs__item"
-                        onclick="handleTabChange(event, 'tab-2');landscapeTabGAEvent('Deploy Time')">
+                    <div class="tabs__item" onclick="handleTabChange(event, 'tab-2')">
                         Deploy
                         Time App
                         Debuggability
                     </div>
-                    <div class="tabs__item"
-                        onclick="handleTabChange(event, 'tab-3');landscapeTabGAEvent('Environment Management')">
+                    <div class="tabs__item" onclick="handleTabChange(event, 'tab-3')">
                         Environment Management</div>
-                    <div class="tabs__item"
-                        onclick="handleTabChange(event, 'tab-4');landscapeTabGAEvent('GitOps Platform')">
+                    <div class="tabs__item" onclick="handleTabChange(event, 'tab-4')">
                         GitOps
                         Platform</div>
-                    <div class="tabs__item"
-                        onclick="handleTabChange(event, 'tab-5');landscapeTabGAEvent('Software Delivery')">
+                    <div class="tabs__item" onclick="handleTabChange(event, 'tab-5')">
                         Software
                         Delivery Workflow
                     </div>
-                    <div class="tabs__item"
-                        onclick="handleTabChange(event, 'tab-6');landscapeTabGAEvent('Operation Insights')">
+                    <div class="tabs__item" onclick="handleTabChange(event, 'tab-6')">
                         Operation Insights</div>
-                    <div class="tabs__item" onclick="handleTabChange(event, 'tab-7');landscapeTabGAEvent('Cost')">
+                    <div class="tabs__item"">
                         Cost Management</div>
                 </div>
 
-                <div style="width: 70vw">
-                    <div id="tab-0" class="tabcontent" style="display: block;">
-                        <div style="display: flex; flex-wrap: wrap">
-                            <div class="landscape-card-width">
-                                <div data-scroll="in" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Fine grained access control; control who can edit configuration and who can
-                                        deploy.
+                <div style=" width: 70vw">
+                        <div id="tab-0" class="tabcontent" style="display: block;">
+                            <div style="display: flex; flex-wrap: wrap">
+                                <div class="landscape-card-width">
+                                    <div data-scroll="in" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Fine grained access control; control who can edit configuration and who can
+                                            deploy.
+                                        </div>
+                                    </div>
+                                    <div data-scroll="in" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            History of all CI and CD events
+                                        </div>
+                                    </div>
+                                    <div data-scroll="in" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Relevant cloud events and their impact on applications
+                                        </div>
                                     </div>
                                 </div>
-                                <div data-scroll="in" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        History of all CI and CD events
+                                <div class="landscape-card-width">
+                                    <div data-scroll="in" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Audit log to know who did what and when
+                                        </div>
                                     </div>
-                                </div>
-                                <div data-scroll="in" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Relevant cloud events and their impact on applications
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="landscape-card-width">
-                                <div data-scroll="in" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Audit log to know who did what and when
-                                    </div>
-                                </div>
-                                <div data-scroll="in" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Kubernetes events impacting application
+                                    <div data-scroll="in" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Kubernetes events impacting application
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="tab-1" class="tabcontent" style="display: none;">
-                        <div style="display: flex; flex-wrap: wrap">
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Multi level security policy at global, cluster, environment and application
-                                        for efficient hierarchical policy management
+                        <div id="tab-1" class="tabcontent" style="display: none;">
+                            <div style="display: flex; flex-wrap: wrap">
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Multi level security policy at global, cluster, environment and application
+                                            for efficient hierarchical policy management
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Define policies and exception for kubernetes resources
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Advanced workflow policies like blackout window, branch environment
+                                            relationship to secure build and deployment pipelines
+                                        </div>
                                     </div>
                                 </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Define policies and exception for kubernetes resources
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Behavior driven security policy
+                                        </div>
                                     </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Advanced workflow policies like blackout window, branch environment
-                                        relationship to secure build and deployment pipelines
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Behavior driven security policy
-                                    </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Define policies for events for faster resolution
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Define policies for events for faster resolution
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="tab-2" class="tabcontent" style="display: none;">
-                        <div style="display: flex; flex-wrap: wrap">
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        One place for all historical kubernetes events
+                        <div id="tab-2" class="tabcontent" style="display: none;">
+                            <div style="display: flex; flex-wrap: wrap">
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            One place for all historical kubernetes events
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Auto identify new and old pods
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Advanced logging functionality with grep and json search
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Auto issue identification
+                                        </div>
                                     </div>
                                 </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Auto identify new and old pods
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Access all manifests securely for eg secret obfuscation
+                                        </div>
                                     </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Advanced logging functionality with grep and json search
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Application metrics for cpu, ram, http status code and latency with
+                                            comparison between new and old
+                                        </div>
                                     </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Auto issue identification
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Access all manifests securely for eg secret obfuscation
-                                    </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Application metrics for cpu, ram, http status code and latency with
-                                        comparison between new and old
-                                    </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Intelligent correlation between events, logs for faster triangulation of
-                                        issue
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Intelligent correlation between events, logs for faster triangulation of
+                                            issue
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="tab-3" class="tabcontent" style="display: none;">
-                        <div style="display: flex; flex-wrap: wrap">
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Define blackout windows to avoid deployment during high critical periods
+                        <div id="tab-3" class="tabcontent" style="display: none;">
+                            <div style="display: flex; flex-wrap: wrap">
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Define blackout windows to avoid deployment during high critical periods
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Compare environments and all artifacts deployed on environments
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Lock environment so that others cannot make any changes without your
+                                            consent, for eg during testing
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Hibernate unused application to save resources
+                                        </div>
                                     </div>
                                 </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Compare environments and all artifacts deployed on environments
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Reconcile and compare configuration of applications across environment
+                                        </div>
                                     </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Lock environment so that others cannot make any changes without your
-                                        consent, for eg during testing
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Easily manage and share helm charts within and across teams
+                                        </div>
                                     </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Hibernate unused application to save resources
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Reconcile and compare configuration of applications across environment
-                                    </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Easily manage and share helm charts within and across teams
-                                    </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Environment override to selectively override configuration for environment
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Environment override to selectively override configuration for environment
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="tab-4" class="tabcontent" style="display: none;">
-                        <div style="display: flex; flex-wrap: wrap">
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25"
-                                    style="min-width: 155px">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Gitops exposed through API and UI so that you dont have to interact with git
-                                        cli
+                        <div id="tab-4" class="tabcontent" style="display: none;">
+                            <div style="display: flex; flex-wrap: wrap">
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25"
+                                        style="min-width: 155px">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Gitops exposed through API and UI so that you dont have to interact with git
+                                            cli
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25"
+                                        style="min-width: 155px">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Enforce finer access control than git
+                                        </div>
                                     </div>
                                 </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25"
-                                    style="min-width: 155px">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Enforce finer access control than git
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25"
-                                    style="min-width: 155px">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Gitops backed by postgres for easier analysis
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25"
+                                        style="min-width: 155px">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Gitops backed by postgres for easier analysis
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="tab-5" class="tabcontent" style="display: none;">
-                        <div style="display: flex; flex-wrap: wrap">
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Workflow which understands the domain of kubernetes and testing so that you
-                                        dont have to write scripts to handle it
+                        <div id="tab-5" class="tabcontent" style="display: none;">
+                            <div style="display: flex; flex-wrap: wrap">
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Workflow which understands the domain of kubernetes and testing so that you
+                                            dont have to write scripts to handle it
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Reusable and composable components so that workflows are easy to contruct
-                                        and reason through
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Reusable and composable components so that workflows are easy to contruct
+                                            and reason through
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="tab-6" class="tabcontent" style="display: none;">
-                        <div style="display: flex; flex-wrap: wrap">
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Deployment metrics to measure success of agile process. It captures mttr,
-                                        change failure rate, deployment frequency, deployment size out of the box.
+                        <div id="tab-6" class="tabcontent" style="display: none;">
+                            <div style="display: flex; flex-wrap: wrap">
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Deployment metrics to measure success of agile process. It captures mttr,
+                                            change failure rate, deployment frequency, deployment size out of the box.
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Monitor changes across deployments and revert easily
+                                        </div>
                                     </div>
                                 </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Monitor changes across deployments and revert easily
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Audit log to understand the failure causes
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Audit log to understand the failure causes
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="tab-7" class="tabcontent" style="display: none;">
-                        <div style="display: flex; flex-wrap: wrap">
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Automatic resource optimization even with HPA
+                        <div id="tab-7" class="tabcontent" style="display: none;">
+                            <div style="display: flex; flex-wrap: wrap">
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Automatic resource optimization even with HPA
+                                        </div>
+                                    </div>
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Advanced pod placement strategies for instance and spot selection
+                                        </div>
                                     </div>
                                 </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Advanced pod placement strategies for instance and spot selection
+                                <div class="landscape-card-width">
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Unused resource management to rightsize cluster
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="landscape-card-width">
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Unused resource management to rightsize cluster
-                                    </div>
-                                </div>
-                                <div data-scroll="out" class="card animate__animated animate__slideInUp25">
-                                    <div class="card-body">
-                                        <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                                        <br>
-                                        Complete visibility into cost of the cluster, environment and applications
+                                    <div data-scroll="out" class="card animate__animated animate__slideInUp25">
+                                        <div class="card-body">
+                                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                            <br>
+                                            Complete visibility into cost of the cluster, environment and applications
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="accordion devtron-landscape--mob" id="accordionExample">
+                    <div>
+                        <div id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
+                                    <div>Compliance</div>
+                                    <div class="arrow">v</div>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample" style="">
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Fine grained access control; control who can edit configuration and who can deploy.
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Audit log to know who did what and when
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                History of all CI and CD events
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Kubernetes events impacting application
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Relevant cloud events and their impact on applications
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <div>Policy Management</div>
+                                    <div class="arrow">v</div>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Multi level security policy at global, cluster, environment and application for
+                                efficient hierarchical policy management
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Behavior driven security policy
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Define policies and exception for kubernetes resources
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Define policies for events for faster resolution
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Advanced workflow policies like blackout window, branch environment relationship to
+                                secure build and deployment pipelines
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <div>Deploy Time App Debuggability</div>
+                                    <div class="arrow">v</div>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                One place for all historical kubernetes events
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Auto identify new and old pods
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Advanced logging functionality with grep and json search
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Access all manifests securely for eg secret obfuscation
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Application metrics for cpu, ram, http status code and latency with comparison between
+                                new and old
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Intelligent correlation between events, logs for faster triangulation of issue
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Auto issue identification
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    <div>Environment mangement</div>
+                                    <div class="arrow">v</div>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Define blackout windows to avoid deployment during high critical periods
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Reconcile and compare configuration of applications across environment
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Compare environments and all artifacts deployed on environments
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Easily manage and share helm charts within and across teams
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Lock environment so that others cannot make any changes without your consent, for eg
+                                during testing
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Environment override to selectively override configuration for environment
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Hibernate unused application to save resources
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    <div>Gitops platlform</div>
+                                    <div class="arrow">v</div>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Gitops exposed through API and UI so that you dont have to interact with git cli
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Enforce finer access control than git
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Gitops backed by postgres for easier analysis
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="headingSix">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    <div>Software delivery workflow</div>
+                                    <div class="arrow">v</div>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Workflow which understands the domain of kubernetes and testing so that you dont have to
+                                write scripts to handle it
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Reusable and composable components so that workflows are easy to contruct and reason
+                                through
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="headingSeven">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+                                    aria-controls="collapseSeven">
+                                    <div>Operation insights</div>
+                                    <div class="arrow">v</div>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Deployment metrics to measure success of agile process. It captures mttr, change failure
+                                rate, deployment frequency, deployment size out of the box.
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Audit log to understand the failure causes
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Monitor changes across deployments and revert easily
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="headingEight">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
+                                    aria-controls="collapseEight">
+                                    <div>Cost</div>
+                                    <div class="arrow">v</div>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Automatic resource optimization even with HPA
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Unused resource management to rightsize cluster
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Advanced pod placement strategies for instance and spot selection
+                            </div>
+                            <div class="card-body">
+                                <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
+                                <br>
+                                Cost visiblity
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- logo section -->
+                <div class="flex_center">
+                    <button class="button">FREE DEMO</button>
                 </div>
             </div>
-            <div class="accordion devtron-landscape--mob" id="accordionExample">
-                <div>
-                    <div id="headingOne" onclick="landscapeTabGAEvent('Compliance')">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                aria-controls="collapseOne">
-                                Compliance
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample"
-                        style="">
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Fine grained access control; control who can edit configuration and who can deploy.
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Audit log to know who did what and when
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            History of all CI and CD events
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Kubernetes events impacting application
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Relevant cloud events and their impact on applications
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div id="headingTwo" onclick="landscapeTabGAEvent('Policy Management')">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo">
-                                Policy Management
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Multi level security policy at global, cluster, environment and application for
-                            efficient hierarchical policy management
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Behavior driven security policy
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Define policies and exception for kubernetes resources
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Define policies for events for faster resolution
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Advanced workflow policies like blackout window, branch environment relationship to
-                            secure build and deployment pipelines
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div id="headingThree" onclick="landscapeTabGAEvent('Deploy Time')">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                aria-controls="collapseThree">
-                                Deploy Time App Debuggability
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            One place for all historical kubernetes events
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Auto identify new and old pods
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Advanced logging functionality with grep and json search
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Access all manifests securely for eg secret obfuscation
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Application metrics for cpu, ram, http status code and latency with comparison between
-                            new and old
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Intelligent correlation between events, logs for faster triangulation of issue
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Auto issue identification
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div id="headingFour" onclick="landscapeTabGAEvent('Environment Management')">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                aria-controls="collapseFour">
-                                Environment mangement
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Define blackout windows to avoid deployment during high critical periods
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Reconcile and compare configuration of applications across environment
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Compare environments and all artifacts deployed on environments
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Easily manage and share helm charts within and across teams
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Lock environment so that others cannot make any changes without your consent, for eg
-                            during testing
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Environment override to selectively override configuration for environment
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Hibernate unused application to save resources
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div id="headingFive" onclick="landscapeTabGAEvent('GitOps Platform')">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-                                aria-controls="collapseFive">
-                                Gitops platlform
-
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Gitops exposed through API and UI so that you dont have to interact with git cli
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Enforce finer access control than git
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Gitops backed by postgres for easier analysis
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div id="headingSix" onclick="landscapeTabGAEvent('Software Delivery')">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
-                                aria-controls="collapseSix">Software delivery
-                                workflow
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Workflow which understands the domain of kubernetes and testing so that you dont have to
-                            write scripts to handle it
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Reusable and composable components so that workflows are easy to contruct and reason
-                            through
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div id="headingSeven" onclick="landscapeTabGAEvent('Operation Insights')">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
-                                aria-controls="collapseSeven">Operation insights
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Deployment metrics to measure success of agile process. It captures mttr, change failure
-                            rate, deployment frequency, deployment size out of the box.
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Audit log to understand the failure causes
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Monitor changes across deployments and revert easily
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div id="headingEight" onclick="landscapeTabGAEvent('Cost')">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
-                                aria-controls="collapseEight"> Cost
-
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Automatic resource optimization even with HPA
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Unused resource management to rightsize cluster
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Advanced pod placement strategies for instance and spot selection
-                        </div>
-                        <div class="card-body">
-                            <img src="./ic-envision-pointers.svg" alt="envision" class="envision-logo">
-                            <br>
-                            Cost visiblity
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- logo section -->
-            <div class="flex_center">
-                <button class="button">FREE DEMO</button>
-            </div>
-        </div>
-
     </section>
 
     <!-- Features Section -->
@@ -852,12 +854,90 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section>
-        <div>
-            <h2></h2>
+    <section class="testimonial_section flex_center">
+        <div class="container">
+            <div class="testimonial_heading_div">
+                <h2 class="heading2">Engineering Teams That Love Us</h2>
+                <div>
+                    <button class="testimonial_button prev"><img src="Arrow.png" /></button>
+                    <button class="testimonial_button next"><img src="Arrow 2.png" /></button>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="image 41.png" alt="" class="testimonial_image">
+                        <div class="slide_text_container">
+                            <p class="slide_description_parah">
+                                Devtron enables us to deploy any number of applications with a shared codebase and helps
+                                to debug applications, check events and config in one screen without switching to
+                                cloudwatch.
+                            </p>
+                            <div>
+                                <h3 class="slide_name_heading">Piyush Verma</h3>
+                                <p class="slide_position_parah">Technical Lead, Delhivery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="image 51.png" alt="" class="testimonial_image">
+                        <div class="slide_text_container">
+                            <p class="slide_description_parah">
+                                Devtron sits on top of some of the greatest tools such as ArgoCD, Grafana, Clair. It is
+                                also user-friendly and intuitive
+                            </p>
+                            <div>
+                                <h3 class="slide_name_heading">Viktor Farcic</h3>
+                                <p class="slide_position_parah">Tech Reviewer, The DevOps Toolkit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="image 52.png" alt="" class="testimonial_image">
+                        <div class="slide_text_container">
+                            <p class="slide_description_parah">
+                                Devtron helped in migrating nearly 80% of applications to Kubernetes helping in quick
+                                adoption.
+                            </p>
+                            <div>
+                                <h3 class="slide_name_heading">Ravi Ranjan</h3>
+                                <p class="slide_position_parah">Principal Engineer, Livspace</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="image 54.png" alt="" class="testimonial_image">
+                        <div class="slide_text_container">
+                            <p class="slide_description_parah">
+                                Using Devtron’s Automated deployments has never been a hassle. Deployment metrics also
+                                helped us measure our deployment frequencies
+                            </p>
+                            <div>
+                                <h3 class="slide_name_heading">Vaibhav Khulbe</h3>
+                                <p class="slide_position_parah">Senior Software Engineer, Delhivery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="image 56.png" alt="" class="testimonial_image">
+                        <div class="slide_text_container">
+                            <p class="slide_description_parah">
+                                This may be by far the best possible feature. You got a UI! We created and tested a
+                                basic CI/CD pipeline without writing a single line of code. All through a few button
+                                clicks!
+                            </p>
+                            <div>
+                                <h3 class="slide_name_heading">Arun Kutty</h3>
+                                <p class="slide_position_parah">Senior Cloud Architect, Deloitte</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_center">
+                <button class="button">FREE DEMO</button>
+            </div>
         </div>
-        <!-- Slider -->
-        <button>FREE DEMO</button>
     </section>
 
     <!-- Download section -->
@@ -918,12 +998,59 @@
             event.currentTarget.className += " active";
         }
 
-        function landscapeTabGAEvent(tabName) {
-            gtag('event', 'Section Landscape', {
-                'event_category': 'Section Landscape Tab',
-                'event_label': tabName
+        // Get all the collapse buttons
+        const collapseButtons = document.querySelectorAll('[data-toggle="collapse"]');
+
+        // Add event listeners to each button
+        collapseButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                var div = button.querySelector(".arrow");
+                div.classList.toggle("rotate");
+                // Get the target collapse element
+                const target = document.querySelector(button.getAttribute('data-target'));
+
+                // Toggle the collapse element's visibility
+                target.classList.toggle('show');
             });
-        }
+        });
+
+
+        // TESTIMONIAL SLIDER
+        const slides = document.querySelector('.slides');
+        const slide = document.querySelectorAll('.slide');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        let counter = 0;
+        const size = document.querySelector('.slides').clientWidth / 5;
+
+        slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+        next.addEventListener('click', () => {
+            if (counter >= slide.length - 1) return;
+            slides.classList.add('slide-move');
+            counter++;
+            slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        });
+
+        prev.addEventListener('click', () => {
+            if (counter <= 0) return;
+            slides.classList.add('slide-move');
+            counter--;
+            slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        });
+
+        slides.addEventListener('transitionend', () => {
+            if (slide[counter].id === 'lastClone') {
+                slides.classList.remove('slide-move');
+                counter = slide.length - 2;
+                slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+            }
+            if (slide[counter].id === 'firstClone') {
+                slides.classList.remove('slide-move');
+                counter = slide.length - counter;
+                slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+            }
+        });
     </script>
 </body>
 
