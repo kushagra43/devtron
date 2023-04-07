@@ -177,6 +177,7 @@ body {
 .Companies_section {
     margin-bottom: 100px;
     padding: 0px 40px;
+    flex-direction: column;
 }
 
 .grid-8 {
@@ -185,7 +186,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 2rem 15px;
     width: 140%;
-    animation: marquee 10s linear infinite;
+    animation: marquee 15s linear infinite;
     overflow: hidden;
 }
 
@@ -200,7 +201,7 @@ body {
 }
 
 .marque-grid-container {
-    width: 200%;
+    width: 280%;
     display: flex;
 }
 
@@ -293,10 +294,11 @@ body {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 0.25rem;
+    width: 45%;
 }
 
 .tabcontent .card {
-    margin: 0 30px 30px;
+    margin: 0 2% 30px;
     background: #5C36DC;
 }
 
@@ -511,7 +513,7 @@ body {
     background: linear-gradient(90deg, #FFF1C2 0%, #FFC300 100%);
     mix-blend-mode: normal;
     border-radius: 44.246px;
-    padding: 16px 30px;
+    padding: 20px 34px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
