@@ -9,27 +9,33 @@
     <link rel="shortcut icon" href="https://devtron.ai/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="_transitions.scss">
-    
+
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MSQB55D');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MSQB55D');</script>
     <!-- End Google Tag Manager -->
-    
+
 </head>
 
 <body>
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSQB55D"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSQB55D" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Nav Bar -->
     <nav class="navbar">
-        <img src="https://devtron.ai/images/Logo.svg" style="height: auto; width: 180px;" alt="devtron_logo" />
+        <div class="nav-container">
+            <img src="Devtron logo.png" alt="devtron_logo" />
+            <button class="button" onclick="scrollToSection()" style="margin-top: 0px;">FREE DEMO</button>
+        </div>
     </nav>
 
     <!-- Header -->
@@ -42,20 +48,7 @@
                         writing YAML scripts.
                     </p>
                 </div>
-                <div class="header_form_container">
-                    <form class="">
-                        <h3 class="header_form_heading">Request a Demo For Your Custom Setup</h3>
-                        <script charset="utf-8" type="text/javascript"
-                            src="//js.hsforms.net/forms/embed/v2.js"></script>
-                        <script>
-                            hbspt.forms.create({
-                                region: "na1",
-                                portalId: "6866519",
-                                formId: "6cb86d0f-1d72-49a4-805d-3ec2029a674f"
-                            });
-                        </script>
-                    </form>
-                </div>
+                <img src="./Footer_Image.png" alt="footer_image" class="footer_image">
             </div>
         </div>
     </header>
@@ -944,22 +937,6 @@
         </div>
     </section>
 
-    <!-- Download section -->
-    <section class="download_section flex_center">
-        <div class="container">
-            <div class="download_section_flex">
-                <img class="download_section_image" src="Download_section_image.png" alt="">
-                <div class="download_section_text_container">
-                    <h2 class="heading2 download_section_heading">The Kubernetes Native Application Management Platform
-                    </h2>
-                    <div class="footer_button_container">
-                         <button class="button" onclick="location.href='https://drive.google.com/uc?export=download&id=1lkXO5PALli8-MZqONSKmaT2oGaWSbpcA'">Download</button>    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer section -->
     <section class="footer">
         <div class="container">
@@ -974,7 +951,20 @@
                         <button class="button footer_button" onclick="scrollToSection()">FREE DEMO</button>
                     </div>
                 </div>
-                <img src="./Footer_Image.png" alt="footer_image" class="footer_image">
+                <div class="header_form_container">
+                    <form class="">
+                        <h3 class="header_form_heading">Request a Demo For Your Custom Setup</h3>
+                        <script charset="utf-8" type="text/javascript"
+                            src="//js.hsforms.net/forms/embed/v2.js"></script>
+                        <script>
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "6866519",
+                                formId: "6cb86d0f-1d72-49a4-805d-3ec2029a674f"
+                            });
+                        </script>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -1036,11 +1026,33 @@
 
         slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
+        var autoSliderTimerId;
+
+        const autoSlider = () => {
+            if (counter >= slide.length - 1) {
+                slides.classList.add('slide-move');
+                counter = 0;
+                slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+                autoSliderTimerId = setTimeout(autoSlider, 5000);
+                return;
+            }
+
+            slides.classList.add('slide-move');
+            counter++;
+            slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+            autoSliderTimerId = setTimeout(autoSlider, 5000);
+        }
+
+        autoSliderTimerId = setTimeout(autoSlider, 5000);
+
+
         next.addEventListener('click', () => {
             if (counter >= slide.length - 1) return;
             slides.classList.add('slide-move');
             counter++;
             slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+            clearTimeout(autoSliderTimerId);
+            autoSliderTimerId = setTimeout(autoSlider, 5000);
         });
 
         prev.addEventListener('click', () => {
@@ -1048,6 +1060,8 @@
             slides.classList.add('slide-move');
             counter--;
             slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+            clearTimeout(autoSliderTimerId);
+            autoSliderTimerId = setTimeout(autoSlider, 5000);
         });
 
         slides.addEventListener('transitionend', () => {
