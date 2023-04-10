@@ -33,13 +33,16 @@
     <!-- Nav Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <img src="https://devtron.ai/images/Logo.svg" alt="devtron_logo" style="height: 50px;width:auto;"/>
+            <img src="https://devtron.ai/images/Logo.svg" alt="devtron_logo" style="height: 50px;width:auto;" />
             <button class="button" onclick="scrollToSection()" style="margin-top: 0px;">FREE DEMO</button>
         </div>
     </nav>
 
     <!-- Header -->
-    <header class="header" id="first-fold">
+    <header class="header" id="first-fold" style="position: relative;overflow: hidden;">
+        <img src="./triangle background.png" alt=""
+            style="z-index: -10;filter: blur(150px); position: absolute;top: -250px; height: 1000px;left: -100px">
+
         <div class="container">
             <div class="header_flex_container">
                 <div class="header_text_container">
@@ -117,7 +120,13 @@
     </section>
 
     <!-- Pipeline Section -->
-    <section class="flex_center Companies_section">
+    <section class="flex_center Companies_section" style="position: relative;overflow: hidden;">
+        <img src="./triangle background.png" alt=""
+            style="z-index: -10; position: absolute; filter: blur(150px); top: -200px; height: 1500px;right: -400px">
+        <img src="square_background.png" alt=""
+            style="z-index: -1; width: 100px;position: absolute; top: 0;right: -50px;">
+        <img src="square_background.png" alt=""
+            style="z-index: -1; width: 150px;position: absolute; bottom: 0px;left: -75px;">
         <div class="container">
             <h2 class="heading2 text_center">
                 Finding it difficult to manage</br>
@@ -815,7 +824,13 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="testimonial_section flex_center">
+    <section class="testimonial_section flex_center" style="position: relative;overflow: hidden;">
+        <img src="./triangle background.png" alt=""
+            style="z-index: -10;filter: blur(150px); position: absolute;top: -250px; height: 1000px;left: -100px">
+        <img src="square_background.png" alt=""
+            style="z-index: -1; width: 100px;position: absolute; top: 0;right: -50px;">
+        <img src="square_background.png" alt=""
+            style="z-index: -1; width: 150px;position: absolute; bottom: 0px;left: -75px;">
         <div class="container">
             <div class="testimonial_heading_div">
                 <h2 class="heading2">Engineering Teams That Love Us</h2>
@@ -904,9 +919,13 @@
     </section>
 
     <!-- Footer section -->
-    <section class="footer" id="bottom_fold">
+    <section class="footer" id="bottom_fold" style="position: relative; overflow-x: hidden;overflow:hidden">
+        <img src="./triangle background.png" alt=""
+            style="z-index: -10; position: absolute; bottom: -1400px; height: 2000px;right: -800px">
+        <img src="square_background.png" alt=""
+            style="z-index: -1; width: 150px;position: absolute; bottom: -75px;right: -75px;">
         <div class="container">
-            <div class="footer_flex_container" >
+            <div class="footer_flex_container">
                 <div class="footer_text_container">
                     <h2 class="heading2 footer_heading">
                         Reduce your CI/CD burden on k8s.
