@@ -23,6 +23,11 @@ body {
     z-index: 10;
 }
 
+.navLogo {
+    height: 50px;
+    width: auto;
+}
+
 
 .nav-container {
     max-width: 1350px;
@@ -553,8 +558,8 @@ body {
 @media only screen and (max-width: 991px) {
 
     /* header */
-    .nav_devtron_logo {
-        height: 28px;
+    .navLogo {
+        height: 34px;
     }
 
     .header {
@@ -809,7 +814,7 @@ body {
 @media only screen and (max-width: 480px) {
 
     /* navbar */
-    .nav_devtron_logo {
+    .navLogo {
         height: 24px;
     }
 
