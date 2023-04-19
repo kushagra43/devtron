@@ -41,7 +41,7 @@ body {
 
 /* header */
 .header {
-    background-image: url(../images/Top_Mesh.png);
+    background-image: url(../images/top_Mesh.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 90px 40px;
@@ -477,7 +477,7 @@ body {
 
 /* footer */
 .footer {
-    background-image: url(../images/Footer_Mesh.png);
+    background-image: url(../images/footer_Mesh.png);
     padding: 100px 40px;
     display: flex;
     align-items: center;
